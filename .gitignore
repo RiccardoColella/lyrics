@@ -1,0 +1,3 @@
+# Il documento Word sorgente non va pubblicato online
+*.docx
+.DS_Store

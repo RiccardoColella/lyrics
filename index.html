@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sommerkonzert im Englischen Garten – Heart of Gold – Liedtexte</title>
+<meta name="description" content="Liedtexte zum Mitsingen – Sommerkonzert im Englischen Garten mit Heart of Gold, 12. Juli 2026, Hirschau München. Kulturzentrum You e.V.">
+<style>
+  :root {
+    --bg: #fdfaf4;
+    --ink: #2b2a26;
+    --muted: #77716a;
+    --accent: #b3541e;
+    --accent-soft: #f3e3d3;
+    --rule: #e5ddd0;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1b19;
+      --ink: #ece7de;
+      --muted: #a39c92;
+      --accent: #e08a4e;
+      --accent-soft: #3a2d22;
+      --rule: #37342f;
+      --card: #262420;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.55;
+    font-size: var(--fs, 18px);
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 1.1rem 4rem; }
+
+  header.hero {
+    text-align: center;
+    padding: 2.2rem 1rem 1.6rem;
+    border-bottom: 3px double var(--accent);
+    margin-bottom: 1.5rem;
+  }
+  .hero .pretitle {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    font-size: .72rem;
+    color: var(--muted);
+    margin: 0 0 .6rem;
+  }
+  .hero h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 .2rem;
+    font-weight: normal;
+  }
+  .hero h1 em { font-style: italic; color: var(--accent); }
+  .hero .band {
+    font-size: 1.15rem;
+    margin: .5rem 0 1rem;
+  }
+  .hero .band strong { color: var(--accent); }
+  .hero .details {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: .85rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  .hero .details span { display: block; margin: .15rem 0; }
+  .hero .free {
+    display: inline-block;
+    margin-top: .8rem;
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: .8rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    padding: .25rem .9rem;
+  }
+
+  .toc-cat {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    font-size: .78rem;
+    color: var(--accent);
+    margin: 1.6rem 0 .4rem;
+  }
+  .toc-list { list-style: none; margin: 0; padding: 0; }
+  .toc-list li { border-bottom: 1px solid var(--rule); }
+  .toc-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: .55rem .2rem;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .toc-list a:active { background: var(--accent-soft); }
+  .toc-title { font-size: 1rem; }
+  .toc-author {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: .7rem;
+    color: var(--muted);
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    flex-shrink: 0;
+    max-width: 45%;
+  }
+
+  .cat-heading {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    font-size: .85rem;
+    color: var(--accent);
+    text-align: center;
+    margin: 3.5rem 0 0;
+    padding-top: 1.5rem;
+    border-top: 3px double var(--accent);
+  }
+  .song { padding-top: 1rem; margin-top: 1.5rem; }
+  .song + .song { border-top: 1px solid var(--rule); }
+  .song-title {
+    font-size: 1.35rem;
+    font-weight: normal;
+    margin: 1rem 0 0;
+    color: var(--ink);
+  }
+  .song-author {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--muted);
+    margin: .2rem 0 1.2rem;
+  }
+  .song p { margin: 0 0 1.05em; }
+  .song p.refrain { font-style: italic; color: var(--muted); }
+  .back-link { text-align: right; }
+  .back-link a {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: .75rem;
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: .05em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.2rem;
+    border-top: 3px double var(--accent);
+    text-align: center;
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: .78rem;
+    color: var(--muted);
+  }
+
+  .font-controls {
+    position: fixed;
+    right: .8rem;
+    bottom: .8rem;
+    display: flex;
+    gap: .4rem;
+    z-index: 10;
+  }
+  .font-controls button {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    border: 1px solid var(--rule);
+    background: var(--card);
+    color: var(--ink);
+    font-family: Georgia, serif;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,.12);
+  }
+  .font-controls .small { font-size: .8rem; }
+  .font-controls .big { font-size: 1.2rem; }
+</style>
+</head>
+<body id="top">
+<div class="wrap">
+
+<header class="hero">
+  <p class="pretitle">Kulturzentrum You e.V. präsentiert</p>
+  <h1>Sommerkonzert<br><em>im Englischen Garten</em></h1>
+  <p class="band">mit <strong>Heart of Gold</strong><br><span style="font-size:.85em;color:var(--muted)">Canti popolari dal mondo &middot; Folk songs from around the world</span></p>
+  <p class="details">
+    <span>Sonntag, 12. Juli 2026 &middot; 18:00 Uhr</span>
+    <span>Hirschau im Englischen Garten</span>
+    <span>Gyßlingstraße 15 &middot; 80805 München</span>
+  </p>
+  <span class="free">Eintritt frei</span>
+</header>
+
+<nav id="programm" aria-label="Programm">
+<h2 class="toc-cat">Canti napoletani / Sud Italia</h2>
+<ol class="toc-list">
+<li><a href="#canto-dei-sanfedisti"><span class="toc-title">Canto Dei Sanfedisti</span><span class="toc-author">TRADIZIONALE</span></a></li>
+<li><a href="#funiculi-funicula"><span class="toc-title">Funiculì Funiculà</span><span class="toc-author">GIUSEPPE TURCO</span></a></li>
+<li><a href="#madonna-della-grazia"><span class="toc-title">Madonna Della Grazia</span><span class="toc-author">Tradizionale</span></a></li>
+<li><a href="#mandulinata-a-napule"><span class="toc-title">Mandulinata A Napule</span><span class="toc-author">MUROLO</span></a></li>
+<li><a href="#o-sole-mio"><span class="toc-title">‘O Sole Mio</span><span class="toc-author">CAPURRO, DI CAPUA (1898)</span></a></li>
+<li><a href="#o-surdato-nnammurato"><span class="toc-title">&#x27;O Surdato &#x27;Nnammurato</span><span class="toc-author">CALIFANO</span></a></li>
+</ol>
+<h2 class="toc-cat">Canti irlandesi</h2>
+<ol class="toc-list">
+<li><a href="#dirty-old-town"><span class="toc-title">Dirty Old Town</span><span class="toc-author">EWAN MacCOLL</span></a></li>
+<li><a href="#lord-of-the-dance"><span class="toc-title">Lord Of The Dance</span><span class="toc-author">DUBLINERS</span></a></li>
+<li><a href="#tell-me-ma"><span class="toc-title">Tell Me Ma</span><span class="toc-author">DUBLINERS</span></a></li>
+<li><a href="#the-fields-of-athenry"><span class="toc-title">The Fields Of Athenry</span><span class="toc-author">DUBLINERS</span></a></li>
+<li><a href="#the-foggy-dew"><span class="toc-title">The Foggy Dew</span><span class="toc-author">THE CHIEFTAINS</span></a></li>
+<li><a href="#the-galway-girl"><span class="toc-title">The Galway Girl</span><span class="toc-author">STEVE EARLE</span></a></li>
+<li><a href="#the-star-of-the-county-down"><span class="toc-title">The Star Of The County Down</span><span class="toc-author">VAN MORRISON &amp; THE CHIEFTAINS</span></a></li>
+<li><a href="#the-wild-rover"><span class="toc-title">The Wild Rover</span><span class="toc-author">DUBLINERS</span></a></li>
+<li><a href="#whiskey-in-the-jar"><span class="toc-title">Whiskey In The Jar</span><span class="toc-author">DUBLINERS</span></a></li>
+</ol>
+<h2 class="toc-cat">Country, Folk, Rock U.S.A.</h2>
+<ol class="toc-list">
+<li><a href="#cotton-eye-joe"><span class="toc-title">Cotton Eye Joe</span><span class="toc-author">REDNEX</span></a></li>
+<li><a href="#forever-young"><span class="toc-title">Forever Young</span><span class="toc-author">BOB DYLAN</span></a></li>
+<li><a href="#heart-of-gold"><span class="toc-title">Heart Of Gold</span><span class="toc-author">NEIL YOUNG</span></a></li>
+<li><a href="#if-i-should-fall-behind"><span class="toc-title">If I Should Fall Behind</span><span class="toc-author">BRUCE SPRINGSTEEN</span></a></li>
+<li><a href="#pay-me-my-money-down"><span class="toc-title">Pay Me My Money Down</span><span class="toc-author">BRUCE SPRINGSTEEN</span></a></li>
+<li><a href="#sweet-home-alabama"><span class="toc-title">Sweet Home Alabama</span><span class="toc-author">LYNYRD SKYNYRD</span></a></li>
+<li><a href="#sweet-home-chicago"><span class="toc-title">Sweet Home Chicago</span><span class="toc-author">BLUES BROTHERS</span></a></li>
+<li><a href="#take-me-home-country-roads"><span class="toc-title">Take Me Home Country Roads</span><span class="toc-author">JOHN DENVER</span></a></li>
+</ol>
+<h2 class="toc-cat">Gospel</h2>
+<ol class="toc-list">
+<li><a href="#amazing-grace"><span class="toc-title">Amazing Grace</span><span class="toc-author">JOHN NEWTON</span></a></li>
+<li><a href="#eyes-on-the-prize"><span class="toc-title">Eyes On The Prize</span><span class="toc-author">BRUCE SPRINGSTEEN</span></a></li>
+<li><a href="#mary-don-t-you-weep"><span class="toc-title">Mary Don’t You Weep</span><span class="toc-author">SPIRITUAL</span></a></li>
+<li><a href="#this-little-light-of-mine"><span class="toc-title">This Little Light Of Mine</span><span class="toc-author">SPIRITUAL</span></a></li>
+<li><a href="#we-shall-overcome"><span class="toc-title">We Shall Overcome</span><span class="toc-author">BRUCE SPRINGSTEEN</span></a></li>
+<li><a href="#when-the-saints-go-marching-in"><span class="toc-title">When The Saints Go Marching In</span><span class="toc-author">BRUCE SPRINGSTEEN</span></a></li>
+</ol>
+<h2 class="toc-cat">Mondo iberico / America Latina</h2>
+<ol class="toc-list">
+<li><a href="#aconteceu"><span class="toc-title">Aconteceu</span><span class="toc-author">Adriana Calcanhotto</span></a></li>
+<li><a href="#fiesta-de-san-benito"><span class="toc-title">Fiesta De San Benito</span><span class="toc-author">INTI ILLIMANI</span></a></li>
+<li><a href="#o-que-e-o-que-e-viver"><span class="toc-title">O Que È O Que È (Viver)</span><span class="toc-author">GONZAGUINHA</span></a></li>
+<li><a href="#ojos-de-cielo"><span class="toc-title">Ojos De Cielo</span><span class="toc-author">VICTOR HEREDIA</span></a></li>
+<li><a href="#pasacalles"><span class="toc-title">Pasacalles</span><span class="toc-author">TUNA COMPOSTELANA</span></a></li>
+<li><a href="#porompompero"><span class="toc-title">Porompompero</span><span class="toc-author">MANOLO ESCOBAR</span></a></li>
+<li><a href="#prece-ao-vento"><span class="toc-title">Prece Ao Vento</span><span class="toc-author">Gilvan Chaves</span></a></li>
+<li><a href="#timoneiro"><span class="toc-title">Timoneiro</span><span class="toc-author">PAULINHO DA VIOLA</span></a></li>
+<li><a href="#virgen-de-guadalupe"><span class="toc-title">Virgen De Guadalupe</span><span class="toc-author">TRADIZIONALE MESSICANO</span></a></li>
+<li><a href="#virgen-morenita"><span class="toc-title">Virgen Morenita</span><span class="toc-author">JORGE CAFRUNE</span></a></li>
+</ol>
+</nav>
+
+<section class="category" id="canti-napoletani-sud-italia">
+<h2 class="cat-heading">Canti napoletani / Sud Italia</h2>
+<article class="song" id="canto-dei-sanfedisti">
+<h3 class="song-title">Canto Dei Sanfedisti</h3>
+<p class="song-author">TRADIZIONALE</p>
+<p>A lu suono de grancascia viva viva lu populo bascio<br>A lu suono &#x27;re tammurrielli so&#x27; risurte li puverielli<br>A lu suono &#x27;re campane viva viva li pupulane<br>A lu suono &#x27;re viulini morte alli Giacubbine.</p>
+<p>Sona, sona, sona ‘a Carmagnola<br>sona li cunzigli, viva &#x27;o Re cu la Famiglia! (2V)</p>
+<p>Alli trirece di giugno, sant&#x27;Antonio gluriuso<br>&#x27;e signure &#x27;sti birbante &#x27;e facettero &#x27;o mazzo tanto<br>So&#x27; venute li Francise, aute tasse &#x27;nce hanno miso<br>Liberté... Egalité... tu arrobbe a me, io arrobbo a te.</p>
+<p class="refrain">Sona, sona…</p>
+<p>Li Francise so&#x27; arrivate, &#x27;nce hanno bbuono carusate<br>evvualà evvualà, cavece &#x27;nculo alla libertà<br>È fernuta l&#x27;uguaglianza, è fernuta la libertà<br>Pe vuie so&#x27; dulure e panza, Signo&#x27;, iateve a curca&#x27;!</p>
+<p class="refrain">Sona, sona…</p>
+<p>Passaie lu mese chiuvusu, lu ventuso e l&#x27;addiruso<br>a lu mese ca se mete hanno avuto l&#x27;aglio arrete.<br>Viva tata maccarone, ca rispetta la religgione.<br>Giacubbine, iate a mare, ca v&#x27;abbrucia lu panare.</p>
+<p class="refrain">Sona, sona…</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="funiculi-funicula">
+<h3 class="song-title">Funiculì Funiculà</h3>
+<p class="song-author">GIUSEPPE TURCO</p>
+<p>Aisséra, Nanninè&#x27;, mme ne sagliette, tu saje addó... Tu saje addó!<br>Addó&#x27;, &#x27;sto core &#x27;ngrato, cchiù dispiette farme nun pò... Farme nun pò!<br>Addó&#x27; lo ffuoco coce, ma si fuje, te lassa stá... Te lassa stá!<br>E nun te corre appriesso e nun te struje sulo a guardá... Sulo a guardá!</p>
+<p>Jammo, jammo, &#x27;ncoppa jammo ja&#x27;. Jammo, jammo, &#x27;ncoppa jammo ja&#x27;.<br>Funiculí - funiculá, funiculí - funiculá.<br>&#x27;Ncoppa jammo ja&#x27;, funiculí - funiculá.</p>
+<p>Nèh jammo: da la terra a la montagna, no passo nc&#x27;è... No passo nc&#x27;è!<br>Se vede Francia, Pròceta, la Spagna... e io veco a te! E io veco a te!<br>Tiráte co li ffune, ditto &#x27;nfatto, &#x27;ncielo se va... &#x27;Ncielo se va!<br>Se va comm&#x27;a lo viento e, a ll&#x27;intrasatto, gué saglie sá&#x27;... Gué saglie sá&#x27;!</p>
+<p class="refrain">Jammo, jammo, &#x27;ncoppa jammo ja&#x27;...</p>
+<p>Se n&#x27;è sagliuta, oje né&#x27;, se n&#x27;è sagliuta, la capa giá... La capa giá!<br>E&#x27; ghiuta, po&#x27; è tornata, po&#x27; è venuta, sta sempe ccá... Sta sempe ccá!<br>La capa vota vota attuorno, attuorno, attuorno a te... Attuorno a te!<br>Lo core canta sempe no taluorno: &quot;Sposammo, oje né&#x27;! Sposammo, oje né&#x27;!&quot;</p>
+<p class="refrain">Jammo, jammo, &#x27;ncoppa jammo ja&#x27;...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="madonna-della-grazia">
+<h3 class="song-title">Madonna Della Grazia</h3>
+<p class="song-author">Tradizionale</p>
+<p>Regina de lu cielo, Divina maestà,<br>chesta grazia ca te cerco fammella pe&#x27; pietà. (2v)</p>
+<p>Eh ma… Madonna de la grazia ca &#x27;mbraccio puorte grazia,<br>a vuje vengo pe&#x27; grazia, o Maria fance gra&#x27;.<br>Eh fa… Fance grazia o Maria, comme te fece lu Pateterno,<br>ca te fece mamma de Dio, fance grazia o Maria.</p>
+<p>Fammella o Maria, fammella pe&#x27; carità<br>pe&#x27; li done ca riceviste dalla Santissima Trinità. (2v)</p>
+<p class="refrain">Eh ma… Madonna de la grazia…</p>
+<p>Scese l&#x27;angelo da lu cielo e te venne ad annunzia&#x27;,<br>annunzia&#x27; venne a Maria e nuie cantammo l&#x27;Avemmaria. (2v)</p>
+<p>Eh ma… Madonna de la grazia… (4V)</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="mandulinata-a-napule">
+<h3 class="song-title">Mandulinata A Napule</h3>
+<p class="song-author">MUROLO</p>
+<p>Sera d&#x27;està. Pusilleco lucente<br>Canta ccanzone e addora d&#x27;erba &#x27;e mare.<br>Voglio &#x27;e pparole cchiù d&#x27;ammore ardente,<br>Voglio &#x27;e pparole cchiù gentile e care<br>Pe&#x27; ddì: &quot;Te voglio bbene&quot; a chi mme sente.</p>
+<p>Ma d&#x27; &#x27;e pparole cchiù carnale e ddoce,<br>Ne sceglio sulo tre: &quot;Te voglio bbene&quot;.<br>Bella, &#x27;int&#x27;ô core tujo sacc&#x27;io chi tiene,<br>Chi sta &#x27;int&#x27;ô core mio saje pure tu.</p>
+<p>P&#x27; &#x27;o mare &#x27;e Napule quant&#x27;armunia!<br>Saglie &#x27;ncielo e &#x27;ncielo sentono tutt&#x27; &#x27;e stelle &#x27;a voce mia.<br>Voce, ca tennera, &#x27;St&#x27;ammore fa.</p>
+<p>Notte d&#x27;està. Se sò addurmute &#x27;e ccase<br>E &#x27;o cielo, a mmare, &#x27;nu scenario ha stiso.<br>Staje &#x27;mbracci&#x27;a mme, &#x27;nnucente sò &#x27;sti vase.<br>Bella, stanotte, te sò frato e sposo.<br>Stanotte ammore e Ddio songh&#x27;una cosa.</p>
+<p>Canta e da &#x27;o suonno Napule se sceta,<br>Ridono &#x27;e vvocche ca se sò vasate.<br>Tutt&#x27; &#x27;e suspire &#x27;e tutt&#x27; &#x27;e &#x27;nnammurate,<br>Suspirano stanotte attuorno a te.</p>
+<p class="refrain">P&#x27; &#x27;o mare &#x27;e Napule...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="o-sole-mio">
+<h3 class="song-title">‘O Sole Mio</h3>
+<p class="song-author">CAPURRO, DI CAPUA (1898)</p>
+<p>Che bella cosa na jurnata &#x27;e sole,<br>N&#x27;aria serena doppo na tempesta!<br>Pe&#x27; ll&#x27;aria fresca pare gia&#x27; na festa...<br>Che bella cosa na jurnata &#x27;e sole.</p>
+<p>Ma n&#x27;atu sole, cchiu&#x27; bello, oi ne&#x27;.<br>&#x27;O sole mio sta &#x27;nfronte a te!<br>&#x27;O sole, &#x27;o sole mio<br>Sta &#x27;nfronte a te! Sta &#x27;nfronte a te!</p>
+<p>Luceno e lastre d&#x27; &#x27;a fenesta toia,<br>&#x27;na lavannara canta e se ne vanta<br>e pe&#x27; tramente torce, spanne e canta,<br>luceno e lastre d&#x27; &#x27;a fenesta toia,</p>
+<p class="refrain">Ma n&#x27;atu sole...</p>
+<p>Quanno fa notte e &#x27;o sole se ne scenne,<br>Me vene quase &#x27;na malincunia;<br>Sotto &#x27;a fenesta toia restarria<br>Quanno fa notte e &#x27;o sole se ne scenne.</p>
+<p class="refrain">Ma n&#x27;atu sole...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="o-surdato-nnammurato">
+<h3 class="song-title">&#x27;O Surdato &#x27;Nnammurato</h3>
+<p class="song-author">CALIFANO</p>
+<p>Staje luntana da stu core, a te volo cu &#x27;o penziero:<br>niente voglio e niente spero ca tenerte sempe a fianco a me!<br>Si sicura &#x27;e chist&#x27;ammore, comm&#x27;i só sicuro &#x27;e te...</p>
+<p>Oje vita, oje vita mia, oje core &#x27;e chistu core,<br>si stata &#x27;o primmo ammore e &#x27;o primmo e ll&#x27;ùrdemo sarraje pe&#x27; me!</p>
+<p>Quanta notte nun te veco, nun te sento &#x27;int&#x27;a sti bbracce,<br>nun te vaso chesta faccia, nun t&#x27;astregno forte &#x27;mbraccio a me?<br>Ma, scetánnome &#x27;a sti suonne, mme faje chiagnere pe&#x27; te...</p>
+<p class="refrain">Oje vita...</p>
+<p>Scrive sempe e sta&#x27; cuntenta: io nun penzo che a te sola.<br>Nu penziero mme cunzola, ca tu pienze sulamente a me.<br>&#x27;A cchiù bella &#x27;e tutt&#x27;&#x27;e bbelle nun è maje cchiù bella &#x27;e te!</p>
+<p class="refrain">Oje vita...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+</section>
+<section class="category" id="canti-irlandesi">
+<h2 class="cat-heading">Canti irlandesi</h2>
+<article class="song" id="dirty-old-town">
+<h3 class="song-title">Dirty Old Town</h3>
+<p class="song-author">EWAN MacCOLL</p>
+<p>I met my love, By the gas works wall.<br>Dreamed a dream, By the old canal.<br>I kissed my girl, By the factory wall.<br>Dirty old town, Dirty old town.</p>
+<p>I heard a siren, from the docks.<br>Saw a train, set the night on fire.<br>Smelled the spring, on the smoky wind.<br>Dirty old town, dirty old town.</p>
+<p>I&#x27;m going to make me a good sharp axe;<br>Shining steel, tempered in the fire.<br>I&#x27;ll chop you down, like an old dead tree.<br>Dirty old town, dirty old town...<br>Dirty old town, Dirty old town.</p>
+<p>I met my love, by the gas works wall.<br>Dreamed a dream, by the old canal.<br>I kissed my girl, by the factory wall.<br>Dirty old town, dirty old town.<br>Dirty old town, Dirty old town.</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="lord-of-the-dance">
+<h3 class="song-title">Lord Of The Dance</h3>
+<p class="song-author">DUBLINERS</p>
+<p>Dance, dance, wherever you may be<br>I am the lord of the dance, said he<br>And I lead you all, wherever you may be<br>And I lead you all in the dance, said he</p>
+<p>I danced in the morning when the world was young<br>I danced in the moon and the stars and the sun<br>I came down from heaven and I danced on the earth<br>At Bethlehem I had my birth</p>
+<p class="refrain">Dance, dance…</p>
+<p>I danced for the scribes and the Pharisees<br>They wouldn&#x27;t dance, they wouldn&#x27;t follow me<br>I danced for the fishermen James and John<br>They came with me so the dance went on</p>
+<p class="refrain">Dance, dance…</p>
+<p>I danced on the Sabbath and I cured the lame<br>The holy people said it was a shame<br>They ripped, they stripped, they hung me high<br>Left me there on the cross to die</p>
+<p class="refrain">Dance, dance…</p>
+<p>I danced on a Friday when the world turned black<br>It&#x27;s hard to dance with the devil on your back<br>They buried my body, they thought I was gone<br>But I am the dance, and the dance goes on</p>
+<p class="refrain">Dance, dance…</p>
+<p>They cut me down and I leapt up high<br>I am the life that will never, never die<br>I&#x27;ll live in you if you&#x27;ll live in me<br>I am the Lord of the dance, said he</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="tell-me-ma">
+<h3 class="song-title">Tell Me Ma</h3>
+<p class="song-author">DUBLINERS</p>
+<p>I&#x27;ll tell me ma, when I get home,<br>The boys won&#x27;t leave the girls alone<br>They pulled my hair, they stole my comb,<br>But that&#x27;s alright, till I go home</p>
+<p>She is handsome, she is pretty,<br>She is the belle of Belfast city<br>She is a-courting one, two, three,<br>please, can you tell me who is she?</p>
+<p>Albert Mooney says he loves her<br>All the boys are fightin&#x27; for her<br>They knock at the door, they&#x27;re ringin&#x27; the bell<br>&quot;Hello, my true love, are you well?&quot;</p>
+<p>Out she comes as white as snow<br>Rings on her fingers, bells on her toes<br>Ol&#x27; Jenny Murray says she&#x27;ll die<br>If she doesn&#x27;t get the fellow with the roving eye</p>
+<p class="refrain">I&#x27;ll tell me ma, when I get home...</p>
+<p>Let the wind and the rain and the hail blow high<br>And the snow come travelin&#x27; from the sky<br>She&#x27;s as nice as apple pie<br>She&#x27;ll get her own lad by and by</p>
+<p>When she gets a lad of her own<br>She won&#x27;t tell her ma when she gets home<br>Let them all come as they will<br>It&#x27;s Albert Mooney she loves still</p>
+<p class="refrain">I&#x27;ll tell me ma, when I get home...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="the-fields-of-athenry">
+<h3 class="song-title">The Fields Of Athenry</h3>
+<p class="song-author">DUBLINERS</p>
+<p>By a lonely prison wall,<br>I heard a young girl calling<br>Michael, they have taken you away,<br>For you stole Trevelyan&#x27;s corn,<br>So the young might see the morn.<br>Now a prison ship lies waiting in the bay.</p>
+<p>Low lie the fields of Athenry<br>Where once we watched the small free birds fly<br>Our love was on the wing, we had dreams and songs to sing<br>It&#x27;s so lonely &#x27;round the fields of Athenry.</p>
+<p>By a lonely prison wall,<br>I heard a young man calling<br>Nothing matters, Mary, when you&#x27;re free<br>Against the famine and the Crown,<br>I rebelled, they cut me down.<br>Now you must raise our child with dignity.</p>
+<p class="refrain">Low lie the fields…</p>
+<p>By a lonely harbor wall,<br>she watched the last star falling<br>As that prison ship sailed out against the sky<br>Sure she&#x27;ll wait and hope and pray,<br>for her love in Botany Bay<br>It&#x27;s so lonely &#x27;round the fields of Athenry.</p>
+<p class="refrain">Low lie the fields…</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="the-foggy-dew">
+<h3 class="song-title">The Foggy Dew</h3>
+<p class="song-author">THE CHIEFTAINS</p>
+<p>As down the glen one Easter morn to a city fair rode I<br>There Armed lines of marching men in squadrons passed me by</p>
+<p>No fife did hum nor battle drum did sound it&#x27;s dread tatoo<br>But the Angelus bell o&#x27;er the Liffey swell rang out through the foggy dew.</p>
+<p>Right proudly high over Dublin Town they hung out the flag of war<br>&#x27;Twas better to die &#x27;neath an Irish sky, than at Sulva or Sud El Bar</p>
+<p>And from the plains of Royal Meath strong men came hurrying through<br>While Britannia&#x27;s Huns, with their long range guns, sailed in through the foggy dew</p>
+<p>But the bravest fell, and the requiem bell rang mournfully and clear<br>For those who died that Eastertide in the springing of the year</p>
+<p>And the world did gaze, in deep amaze, at those fearless men, but few<br>Who bore the fight that freedom&#x27;s light might shine through the foggy dew.</p>
+<p>Ah, back through the glen I rode again and my heart with grief was sore<br>For I parted then with valiant men whom I never shall see more</p>
+<p>But to and fro in my dreams I go and I&#x27;d kneel and pray for you,<br>For slavery fled, O glorious dead, when you fell in the foggy dew.</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="the-galway-girl">
+<h3 class="song-title">The Galway Girl</h3>
+<p class="song-author">STEVE EARLE</p>
+<p>Well, I took a stroll on the old long walk, Of a day -I-ay-I-ay<br>I met a little girl and we stopped to talk, Of a day -I-ay-I-ay</p>
+<p>And I ask you, friend, what&#x27;s a fella to do<br>&#x27;Cause her hair was black and her eyes were blue<br>And I knew right then I&#x27;d be takin&#x27; a whirl<br>&#x27;Round the Salthill Prom with a Galway girl</p>
+<p>We were halfway there when the rain came down, Of a day -I-ay-I-ay<br>And she asked me up to her flat downtown, Of a day -I-ay-I-ay</p>
+<p>And I ask you, friend, what&#x27;s a fella to do<br>&#x27;Cause her hair was black and her eyes were blue<br>So I took her hand and I gave her a twirl<br>And I lost my heart to a Galway girl</p>
+<p>When I woke up I was all alone, …<br>With a broken heart and a ticket home, …</p>
+<p>And I ask you now, tell me what would you do<br>Ah! If her hair was black and her eyes were blue<br>I&#x27;ve traveled around I&#x27;ve been all over this world<br>I ain&#x27;t never seen nothin&#x27; like a Galway girl</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="the-star-of-the-county-down">
+<h3 class="song-title">The Star Of The County Down</h3>
+<p class="song-author">VAN MORRISON &amp; THE CHIEFTAINS</p>
+<p>Near Banbridge town, in the County Down, One morning in July<br>Down a boreen green came a sweet colleen and she smiled as she passed me by.<br>She looked so sweet from her two white feet to the sheen of her nut-brown hair<br>Such a coaxing elf, I&#x27;d to shake myself to make sure I was standing there.</p>
+<p>From Bantry Bay up to Derry Quay and from Galway to Dublin town<br>No maid I&#x27;ve seen like the sweet colleen, that I met in the County Down.</p>
+<p>As she onward sped I shook my head and I gazed with a feeling rare<br>And I said, says I, to a passerby: &quot;Who&#x27;s the maid with the nut-brown hair?&quot;<br>He smiled at me, and with pride says he: &quot;That&#x27;s the gem of Ireland&#x27;s crown.<br>She&#x27;s young Rosie McCann from the banks of the Bann, She&#x27;s the star of the County Down.&quot;</p>
+<p>From Bantry Bay up to Derry Quay and from Galway to Dublin town<br>No maid I&#x27;ve seen like the sweet colleen, that I met in the County Down.</p>
+<p>At the crossroads fair I&#x27;ll be surely there, and I&#x27;ll dress in my Sunday clothes<br>And I&#x27;ll try sheep&#x27;s eyes and deludhering lies on the heart of the nut-brown rose.<br>No pipe I&#x27;ll smoke, no horse I&#x27;ll yoke, though with rust my plow turns brown<br>Till a smiling bride by my own fireside sits the star of the County Down.</p>
+<p>From Bantry Bay up to Derry Quay and from Galway to Dublin town<br>No maid I&#x27;ve seen like the sweet colleen, that I met in the County Down.</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="the-wild-rover">
+<h3 class="song-title">The Wild Rover</h3>
+<p class="song-author">DUBLINERS</p>
+<p>I&#x27;ve been a wild rover for many&#x27;s the year<br>and I&#x27;ve spent all me money on whiskey and beer<br>and now I&#x27;m returning with gold in great store<br>and I never will play the wild rover no more</p>
+<p>And it&#x27;s no, nay, never… no, nay, never! No more<br>will I play the wild rover no, never, no more</p>
+<p>I went into an alehouse I used to frequent<br>and I told the landlady me money was spent<br>I asked her for credit, she answered me &quot;Nay!<br>Such a custom as yours I could have any day&quot;</p>
+<p class="refrain">And it&#x27;s no, nay, never...</p>
+<p>I took from me pocket ten sovereigns bright<br>and the landlady&#x27;s eyes opened up with delight<br>she said &quot;You&#x27;ll have whiskeys and wines of the best<br>and the words that i told you were only in jest&quot;</p>
+<p class="refrain">And it&#x27;s no, nay, never...</p>
+<p>I went home to my parents, confessed what I&#x27;d done<br>and I asked them to pardon their prodigal son<br>and when they&#x27;d caressed me as oft times before<br>sure I never will play the wild rover no more</p>
+<p class="refrain">And it&#x27;s no, nay, never...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="whiskey-in-the-jar">
+<h3 class="song-title">Whiskey In The Jar</h3>
+<p class="song-author">DUBLINERS</p>
+<p>As I was a goin&#x27; over the far famed Kerry mountains<br>I met with captain Farrell and his money he was counting<br>I first produced my pistol and I then produced my rapier<br>Saying &quot;Stand and deliver for you are my bold deceiver&quot;</p>
+<p>Mush-a ring dum-a do dum-a da<br>Wack fall the daddy-o, wack fall the daddy-o<br>There&#x27;s whiskey in the jar</p>
+<p>I counted out his money and it made a pretty penny<br>I put it in me pocket and I took it home to Jenny<br>She sighed and she swore that she never would deceive me<br>But the devil take the women for they never can be easy</p>
+<p class="refrain">Mush-a ring…</p>
+<p>I went up to my chamber, all for to take a slumber<br>I dreamt of gold and jewels and for sure &#x27;t was no wonder<br>But Jenny drew me charges and she filled them up with water<br>Then sent for captain Farrell to be ready for the slaughter</p>
+<p class="refrain">Mush-a ring…</p>
+<p>&#x27;twas early in the morning, just before I rose to travel<br>Up comes a band of footmen and likewise captain Farrell<br>I first produced me pistol for she stole away me rapier<br>But I couldn&#x27;t shoot the water, so a prisoner I was taken</p>
+<p class="refrain">Mush-a ring…</p>
+<p>Now there&#x27;s some take delight in the carriages a rolling<br>and others take delight in the hurling and the bowling<br>but I take delight in the juice of the barley<br>and courting pretty fair maids in the morning bright and early</p>
+<p class="refrain">Mush-a ring…</p>
+<p>If anyone can aid me &#x27;t is my brother in the army<br>If I can find his station in Cork or in Killarney<br>And if he&#x27;ll go with me, we&#x27;ll go rovin&#x27; in Kilkenny<br>And I&#x27;m sure he&#x27;ll treat me better than my own a-sporting Jenny</p>
+<p class="refrain">Mush-a ring…</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+</section>
+<section class="category" id="country-folk-rock-u-s-a">
+<h2 class="cat-heading">Country, Folk, Rock U.S.A.</h2>
+<article class="song" id="cotton-eye-joe">
+<h3 class="song-title">Cotton Eye Joe</h3>
+<p class="song-author">REDNEX</p>
+<p>If it hadn&#x27;t been for Cotton-Eye Joe,<br>I&#x27;d been married long time ago<br>Where did you come from? Where did you go?<br>Where did you come from Cotton-Eye Joe?</p>
+<p>He came to town like a mid-winter storm<br>He rode through the fields, so handsome and strong<br>His eyes was his tools and his smile was his gun<br>But all he had come for was, having some fun</p>
+<p class="refrain">If it hadn&#x27;t been for Cotton-Eye Joe...</p>
+<p>He brought disaster wherever he went<br>The hearts of the girls was to hell broken sent<br>They all ran away, so nobody would know<br>And left only men &#x27;cause of Cotton-Eye Joe</p>
+<p class="refrain">If it hadn&#x27;t been for Cotton-Eye Joe...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="forever-young">
+<h3 class="song-title">Forever Young</h3>
+<p class="song-author">BOB DYLAN</p>
+<p>May God bless and keep you always<br>May your wishes all come true<br>May you always do for others<br>And let others do for you<br>May you build a ladder to the stars<br>And climb on every rung<br>May you stay forever young</p>
+<p>May you grow up to be righteous<br>May you grow up to be true<br>May you always know the truth<br>And see the lights surrounding you<br>May you always be courageous<br>Stand upright and be strong<br>May you stay forever young</p>
+<p>Forever young, forever young<br>May you stay forever young</p>
+<p>May your hands always be busy<br>May your feet always be swift<br>May you have a strong foundation<br>When the winds of changes shift<br>May your heart always be joyful<br>And may your song always be sung<br>May you stay forever young</p>
+<p>Forever young, forever young<br>May you stay forever young</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="heart-of-gold">
+<h3 class="song-title">Heart Of Gold</h3>
+<p class="song-author">NEIL YOUNG</p>
+<p>I want to live, I want to give<br>I&#x27;ve been a miner for a heart of gold.<br>It&#x27;s these expressions i never give</p>
+<p>That keep me searching for a heart of gold<br>And I&#x27;m getting old.(2v)</p>
+<p>I&#x27;ve been to Hollywood, I&#x27;ve been to Redwood<br>I crossed the ocean for a heart of gold.<br>I&#x27;ve been in my mind, It&#x27;s such a fine line</p>
+<p class="refrain">That keep…</p>
+<p>Keep me searching for a heart of gold.<br>You keep me searching and I&#x27;m growing old.<br>Keep me searching for a heart of gold<br>I&#x27;ve been a miner for a heart of gold.<br>...mmm...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="if-i-should-fall-behind">
+<h3 class="song-title">If I Should Fall Behind</h3>
+<p class="song-author">BRUCE SPRINGSTEEN</p>
+<p>We said we&#x27;d walk together baby come what may<br>That come the twilight should we lose our way<br>If as we&#x27;re walkin a hand should slip free<br>I&#x27;ll wait for you, And should I fall behind<br>Baby, you wait for me</p>
+<p>We swore we&#x27;d travel darlin&#x27; side by side<br>We&#x27;d help each other stay in stride<br>But each lover&#x27;s steps fall so differently<br>I&#x27;ll wait for you, And should I fall behind<br>Baby, you wait for me</p>
+<p>Now everyone dreams of a love lasting and true<br>But you and I know what this world can do<br>So let&#x27;s make our steps clear that the other may see<br>I&#x27;ll wait for you, And should I fall behind<br>Baby, you wait for me</p>
+<p>Now there&#x27;s a beautiful river in the valley ahead<br>There &#x27;neath the oak&#x27;s bough soon we will be wed<br>Should we lose each other in the shadow of the evening trees<br>I&#x27;ll wait for you, And should I fall behind<br>Baby, you wait for me<br>I&#x27;ll wait for you, And should I fall behind<br>Baby, you wait for me<br>I&#x27;ll wait for you, And should I fall behind<br>Baby, you wait for me</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="pay-me-my-money-down">
+<h3 class="song-title">Pay Me My Money Down</h3>
+<p class="song-author">BRUCE SPRINGSTEEN</p>
+<p>Well, I thought I heard the captain say,<br>&quot;Pay me my money down.<br>Tomorrow is my sailing day,<br>pay me my money down.&quot;</p>
+<p>Oh, pay me. Pay me.<br>Pay me my money down.<br>Pay me or go to jail.<br>Pay me my money down.</p>
+<p>Soon as that boat was clear of the bar,<br>pay me my money down,<br>well, he knocked me down with the end of a spar<br>Pay me my money down.</p>
+<p class="refrain">Oh, pay me. Pay me…</p>
+<p>Well if I&#x27;d been a rich mans son,<br>Pay me my money down.<br>I&#x27;d sit on the river and watch it run,<br>Pay me my money down.</p>
+<p class="refrain">Oh, pay me. Pay me…</p>
+<p>Well, wish I was Mr. Gates,<br>pay me my money down.<br>Haul my money in egg crates.<br>Pay me my money down.</p>
+<p class="refrain">Oh, pay me. Pay me…</p>
+<p>Well, 40 nights, nights at sea,<br>pay me my money down.<br>Captian worked every last dollar out of me.<br>Pay me my money down.</p>
+<p class="refrain">Oh, pay me. Pay me…</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="sweet-home-alabama">
+<h3 class="song-title">Sweet Home Alabama</h3>
+<p class="song-author">LYNYRD SKYNYRD</p>
+<p>Big wheels keep on turning<br>Carry me home to see my kin<br>Singing songs about the Southland<br>I miss Alabamy once again and I think its a sin, yes</p>
+<p>Well I heard mister Young sing about her<br>Well, I heard ole Neil put her down<br>Well, I hope Neil Young will remember<br>A Southern man don&#x27;t need him around anyhow</p>
+<p>Sweet home Alabama<br>Where the skies are so blue<br>Sweet Home Alabama<br>Lord, I&#x27;m coming home to you</p>
+<p>In Birmingham they love the gov&#x27; nor (boo, boo, boo)<br>Now we all did what we could do<br>Now Watergate does not bother me<br>Does your conscience bother you? Tell the truth</p>
+<p class="refrain">Sweet home Alabama...</p>
+<p>Now Muscle Shoals has got the Swampers<br>And they&#x27;ve been known to pick a song or two (yes, they do!)<br>Lord they get me off so much<br>They pick me up when I&#x27;m feeling blue, now how about you?</p>
+<p class="refrain">Sweet home Alabama...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="sweet-home-chicago">
+<h3 class="song-title">Sweet Home Chicago</h3>
+<p class="song-author">BLUES BROTHERS</p>
+<p>Come on, Oh baby don&#x27;t you wanna go<br>Come on, Oh baby don&#x27;t you wanna go<br>Back to that same old place, Sweet home Chicago</p>
+<p>Come on, Baby don&#x27;t you wanna go<br>Hidehey, Baby don&#x27;t you wanna go<br>Back to that same old place, Oh sweet home Chicago</p>
+<p>Well, one and one is two<br>Six and two is eight<br>Come on baby don&#x27;t ya make me late</p>
+<p>Hidehey, Baby don&#x27;t you wanna go<br>Back to that same old place, Sweet home Chicago</p>
+<p>Six and three is nine<br>Nine and nine is eighteen<br>Look there brother baby and see what I&#x27;ve seen</p>
+<p class="refrain">Hidehey…</p>
+<p class="refrain">Come on…</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="take-me-home-country-roads">
+<h3 class="song-title">Take Me Home Country Roads</h3>
+<p class="song-author">JOHN DENVER</p>
+<p>Almost heaven, West Virginia<br>Blue ridge mountains, Shenandoah river<br>Life is old there, older than the trees<br>Younger than the mountains, growin&#x27; like a breeze</p>
+<p>Country roads, take me home to the place I belong<br>West Virginia, mountain momma. Take me home, country roads</p>
+<p>All my memories, they gather &#x27;round her<br>Miner&#x27;s lady, stranger to blue water<br>Dark and dusty, painted on the sky<br>Misty taste of moonshine, teardrops in my eyes</p>
+<p class="refrain">Country roads, take me home...</p>
+<p>I hear her voice in the mornin&#x27; hour she calls me<br>The radio reminds me of my home far away<br>And drivin&#x27; down the road I get a feeling<br>That I should have been home yesterday, yesterday...</p>
+<p class="refrain">Country roads, take me home...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+</section>
+<section class="category" id="gospel">
+<h2 class="cat-heading">Gospel</h2>
+<article class="song" id="amazing-grace">
+<h3 class="song-title">Amazing Grace</h3>
+<p class="song-author">JOHN NEWTON</p>
+<p>Amazing Grace, how sweet the sound,<br>That saved a wretch like me.<br>I once was lost but now am found,<br>Was blind, but now I see.</p>
+<p>T&#x27;was Grace that taught my heart to fear.<br>And Grace, my fears relieved.<br>How precious did that Grace appear<br>The hour I first believed.</p>
+<p>Through many dangers, toils and snares<br>I have already come;<br>&#x27;Tis Grace that brought me safe thus far<br>and Grace will lead me home.</p>
+<p>The Lord has promised good to me.<br>His word my hope secures.<br>He will my shield and portion be,<br>As long as life endures.</p>
+<p>Yea, when this flesh and heart shall fail,<br>And mortal life shall cease,<br>I shall possess within the veil,<br>A life of joy and peace.</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="eyes-on-the-prize">
+<h3 class="song-title">Eyes On The Prize</h3>
+<p class="song-author">BRUCE SPRINGSTEEN</p>
+<p>Paul and Silas bound in jail, Had no money to go their bail<br>Keep your eyes on the prize, Hold on</p>
+<p>Freedom&#x27;s name is mighty sweet, and soon we&#x27;re gonna meet<br>Keep your eyes on the prize, Hold on</p>
+<p>Hold on... ... Hold on...<br>Keep your eyes on the prize, Hold on</p>
+<p>Only chain that a man can stand is that chain o&#x27;hand on hand<br>Keep your eyes on the prize, Hold on</p>
+<p>I got my hand on the gospel plow, Won&#x27;t take nothing for my journey now<br>Keep your eyes on the prize, Hold on</p>
+<p class="refrain">Hold on...</p>
+<p>The only thing I did was wrong was staying&#x27; in the wilderness too long<br>Keep your eyes on the prize, Hold on</p>
+<p>The only thing I did was right was the day we started to fight<br>Keep your eyes on the prize, Hold on</p>
+<p class="refrain">Hold on...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="mary-don-t-you-weep">
+<h3 class="song-title">Mary Don’t You Weep</h3>
+<p class="song-author">SPIRITUAL</p>
+<p>Well if I could I surely would,<br>Stand on the rock where Moses stood<br>Pharaoh&#x27;s army got drowned, O Mary don&#x27;t you weep</p>
+<p>O Mary don&#x27;t you weep, don&#x27;t mourn - O Mary don&#x27;t you weep, don&#x27;t mourn<br>Pharaoh&#x27;s army got drowned, O Mary don&#x27;t you weep</p>
+<p>Well Moses stood on the Red Sea shore<br>And smote&#x27; the water with a two by four<br>Pharaoh&#x27;s army got drowned, O Mary don&#x27;t you weep</p>
+<p class="refrain">O Mary don&#x27;t you weep…</p>
+<p>Well one of theses nights bout 12 o&#x27;clock<br>This old world is gonna rock<br>Pharaoh&#x27;s army got drowned, O Mary don&#x27;t you weep</p>
+<p class="refrain">O Mary don&#x27;t you weep…</p>
+<p>Well old Mr. Satan he got mad<br>Missed that soul he thought he had<br>Pharaoh&#x27;s army got drowned, O Mary don&#x27;t you weep</p>
+<p class="refrain">O Mary don&#x27;t you weep…</p>
+<p>Brothers and sisters don&#x27;t you cry<br>They&#x27;ll be good times by and by<br>Pharaoh&#x27;s army got drowned, O Mary don&#x27;t you weep</p>
+<p class="refrain">O Mary don&#x27;t you weep…</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="this-little-light-of-mine">
+<h3 class="song-title">This Little Light Of Mine</h3>
+<p class="song-author">SPIRITUAL</p>
+<p>This little light of mine, I&#x27;m gonna let it shine<br>This little light of mine, I&#x27;m gonna let it shine<br>This little light of mine, I&#x27;m gonna let it shine<br>Every day (every day), every day (every day)<br>I’m gonna let my little light shine</p>
+<p>Jesus gave me light, I&#x27;m gonna let it shine<br>Every day (every day), every day (every day)<br>I&#x27;m gonna let my little light shine</p>
+<p>This little light of mine, I&#x27;m gonna let it shine<br>Every day (every day), every day (every day)<br>I&#x27;m gonna let my little light shine</p>
+<p>Monday, Gave me the gift of love<br>Tuesday, Peace came from above<br>Wednesday, Told me to have more faith<br>Thursday, Gave me a little more grace<br>Friday, Told me to watch and pray<br>Saturday, Told me what to say<br>Sunday, Gave me the power divine<br>This little light of mine</p>
+<p>This little light of mine, I&#x27;m gonna let it shine<br>This little light of mine, I&#x27;m gonna let it shine<br>This little light of mine, I&#x27;m gonna let it shine<br>Every day (every day), every day (every day)<br>I’m gonna let my little light shine</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="we-shall-overcome">
+<h3 class="song-title">We Shall Overcome</h3>
+<p class="song-author">BRUCE SPRINGSTEEN</p>
+<p>We shall overcome, we shall overcome<br>We shall overcome some day<br>Oh, deep in my heart I do believe<br>We shall overcome some day</p>
+<p>We&#x27;ll walk hand in hand, We&#x27;ll walk hand in hand<br>We&#x27;ll walk hand in hand some day<br>Oh, deep in my heart I do believe<br>We shall overcome some day</p>
+<p>We shall all be free, We shall all be free<br>We shall all be free some day<br>Oh, deep in my heart I do believe<br>We shall overcome some day</p>
+<p>We are not afraid, We are not afraid<br>We are not afraid some day<br>Oh, deep in my heart I do believe<br>We shall overcome some day</p>
+<p>We shall overcome, We shall overcome<br>We shall overcome some day<br>Oh, deep in my heart I do believe<br>We shall overcome some day</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="when-the-saints-go-marching-in">
+<h3 class="song-title">When The Saints Go Marching In</h3>
+<p class="song-author">BRUCE SPRINGSTEEN</p>
+<p>We are all trav&#x27;ling in the footsteps of those that&#x27;ve gone before<br>And we&#x27;ll all be riunite on that new and sunlit shore</p>
+<p>Oh, when the saints go marching in, when the saints go marching in<br>Lord, how I want to be in that number, when the saints go marching in</p>
+<p>And when the sun refuses to shine, when the sun refuses to shine<br>Lord, how I want to be in that number, when the sun refuses to shine</p>
+<p class="refrain">Oh, when the saints…</p>
+<p>And when the trumpet sounds its call, when the trumpet sounds its call<br>Lord, how I want to be in that number, when the trumpet sounds its call</p>
+<p class="refrain">Oh, when the saints…</p>
+<p>Now some say, some say that this world of trouble is the only one we&#x27;ll ever see<br>But I&#x27;m waiting, waiting for that morning, when the new world is revealed.</p>
+<p class="refrain">Oh, when the saints…</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+</section>
+<section class="category" id="mondo-iberico-america-latina">
+<h2 class="cat-heading">Mondo iberico / America Latina</h2>
+<article class="song" id="aconteceu">
+<h3 class="song-title">Aconteceu</h3>
+<p class="song-author">Adriana Calcanhotto</p>
+<p>Aconteceu quando a gente nao esperava,<br>aconteceu sem um sino pra tocar,<br>aconteceu diferentes das historias<br>que os romances e a memoria<br>tem costume de contar.</p>
+<p>Aconteceu sem que a chao tivesse estrelas,<br>aconteceu sem um raio de lunar.<br>O nosso amor foi chegando de mansinho,<br>se espalhou devagarinho,<br>foi ficando até ficar.</p>
+<p>Aconteceu sem que o mundo agradecesse,<br>sem que rosas florescessem,<br>sem um canto de louvur,<br>Aconteceu sem que houvesse nenhum drama.<br>So o tempo fez a cama<br>como em todo grande amor.</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="fiesta-de-san-benito">
+<h3 class="song-title">Fiesta De San Benito</h3>
+<p class="song-author">INTI ILLIMANI</p>
+<p>Dónde está mi negra bailando<br>con las sayas de tundiki, bailando.<br>con las sayas de tundiki, bailando.</p>
+<p>Dónde se ha metido mi negra,<br>cargada de su guagüita, bailando<br>cargada de su guagüita, bailando</p>
+<p>Negra, samba, aunque tunante, siempre adelante.<br>Negra, samba, aunque tunante, siempre adelante.</p>
+<p>Hay un lorito con su monito.<br>Hay un lorito con su monito.<br>Es un regalo de San Benito<br>Para la fiesta de los negritos. La, la, la…</p>
+<p>Ya nos vamos, ya nos vamos cantando,<br>Ya nos vamos, ya nos vamos cantando,</p>
+<p>Ya nos vamos, ya nos vamos bailando,<br>Ya nos vamos, ya nos vamos bailando,</p>
+<p>con las sayas de tundiki cantando,<br>con las sayas de tundiki cantando.</p>
+<p>con las sayas de tundiki bailando,<br>con las sayas de tundiki bailando.</p>
+<p>Negra, samba, aunque tunante, siempre adelante.<br>Negra, samba, aunque tunante, siempre adelante.</p>
+<p>Hay un lorito con su monito.<br>Hay un lorito con su monito.<br>Es un regalo de San Benito<br>Para la fiesta de los negritos. La, la, la…</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="o-que-e-o-que-e-viver">
+<h3 class="song-title">O Que È O Que È (Viver)</h3>
+<p class="song-author">GONZAGUINHA</p>
+<p>Eu fico com a pureza da resposta das crianças: É a vida! É bonita e é bonita!</p>
+<p>Viver e não ter a vergonha de ser feliz…<br>Cantar (e cantar e cantar) a beleza de ser um eterno aprendiz, Ah meu Deus!<br>Eu sei (eu sei!) que a vida devia ser bem melhor e será…<br>Mas isso não impede que eu repita: “É bonita, é bonita, é bonita!”</p>
+<p>E a vida? E a vida o que é? Diga lá, meu irmão.<br>Ela é a batida de um coração? Ela é uma doce ilusão?<br>Mas e a vida? Ela é maravida ou é sofrimento?<br>Ela é alegria ou lamento? O que é? O que é, meu irmão?</p>
+<p>Há quem fale que a vida da gente é um nada no mundo,<br>É uma gota, é um tempo que nem dá um segundo<br>Há quem fale que é um divino mistério profundo,<br>É o sopro do criador numa atitude repleta de amor</p>
+<p>Você diz que é luta e prazer, Ele diz que a vida é viver<br>Ela diz que melhor é morrer, pois amada não é, E o verbo é sofrer<br>Eu só sei que confio na moça, E na moça eu ponho a força da fé<br>Somos nós que fazemos a vida, Como der, ou puder, ou quiser</p>
+<p>Sempre desejada, Por mais que esteja errada<br>Ninguém quer a morte, Só saúde e sorte<br>E a pergunta roda, E a cabeça agita</p>
+<p>Eu fico com a pureza da resposta das crianças: É a vida! É bonita e é bonita!</p>
+<p class="refrain">Viver...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="ojos-de-cielo">
+<h3 class="song-title">Ojos De Cielo</h3>
+<p class="song-author">VICTOR HEREDIA</p>
+<p>Si yo miro el fondo de tus ojos terno<br>se me borra el mundo con todo su infierno.<br>Se me borra el mundo y descubro el cielo<br>cuando me zambullo en tus ojos tiernos.</p>
+<p>Ojos de cielo, ojos de cielo,<br>no me abandones en pleno vuelo.<br>Ojos de cielo, ojos de cielo,<br>toda mi vida por ese sueño.<br>Ojos de cielo, ojos de cielo,<br>Ojos de cielo, ojos de cielo.</p>
+<p>Si yo me olvidara de lo verdadero,<br>si yo me alejara de lo mas sincero.<br>Tu ojos de cielo me lo recordaran<br>si yo me olvidara de lo verdadero.</p>
+<p class="refrain">Ojos de cielo, ojos de cielo...</p>
+<p>Si el sol que me alumbra se apagara un día<br>y una noche oscura ganara mi vida,<br>tus ojos de cielo me iluminarían,<br>tus ojos sinceros, mi camino y guía.</p>
+<p class="refrain">Ojos de cielo, ojos de cielo...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="pasacalles">
+<h3 class="song-title">Pasacalles</h3>
+<p class="song-author">TUNA COMPOSTELANA</p>
+<p>Pasa la tuna en Santiago cantando muy queda<br>romances de amor.<br>Luego la noche en sus ecos, los cuelga de ronda<br>por todo el balcón.</p>
+<p>Pero allà en el templo del Apòstol Santo<br>una niña llora ante su patrón;<br>porqué la capa del tuno que adora,<br>no lleva la cinta que ella le bordó.<br>Porque la capa…</p>
+<p>Cuando la tuna te dè serenata<br>no te enamores, compostelana,<br>que en cada cinta que adorna mi capa<br>hay un tracito de corazon.</p>
+<p>Y deja a la tuna pasar,<br>no te enamores, compostelana,<br>y deja a la tuna pasar,<br>con su tra, la, la, la, la</p>
+<p>Hoy va la tuna de gala, cantando y tocando<br>la marcha nupcial;<br>suenan campanas de gloria, que dejan desierta<br>la Universidad.</p>
+<p>Pero allà en el templo del Apostol Santo<br>con el estudiante hoy se va a casar;<br>la galleguina, melosa, melosa,<br>que oyendo esta copla ya no llorarà.<br>La galleguina…</p>
+<p class="refrain">Cuando la tuna…</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="porompompero">
+<h3 class="song-title">Porompompero</h3>
+<p class="song-author">MANOLO ESCOBAR</p>
+<p>El trigo entre todas las flores<br>Ha elegido a la amapola,<br>Y yo elijo a mi Dolores,<br>Dolores, Lolita, Lola.</p>
+<p>Y yo, y yo elijo a mi Dolores<br>Que es la, que es la flor mas perfumada,<br>Dolo, Dolores, Lolita, Lola.</p>
+<p>Porompompo, porompompero, pero,<br>porompompero, pero,<br>Poro, porompompo. (2 V)</p>
+<p>El cateto de tu hermano<br>Que no me venga con leyes,<br>Es payo y yo soy gitano<br>Que llevo sangre de reyes, que es pa,</p>
+<p>Que es pa... que es payo y yo soy gitano, que lle,<br>Que llevo sangre de reyes en la,<br>En la palma de la mano.</p>
+<p>Porompompo, porompompero, pero,<br>porompompero, pero,<br>Poro, porompompo. (2 V)</p>
+<p>Verde era la hoja,<br>Verde era la parra,<br>Debajo del puente,<br>Debajo del puente,</p>
+<p class="refrain">Retumba, retumba, retumba...</p>
+<p>Porompompo, porompompero, pero,<br>porompompero, pero,<br>Poro, porompompo. (2 V)</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="prece-ao-vento">
+<h3 class="song-title">Prece Ao Vento</h3>
+<p class="song-author">Gilvan Chaves</p>
+<p>Vento que balança as palhas do coqueiro<br>Vento que encrespa as ondas do mar<br>Vento que assanha os cabelos da morena<br>Me traz notícia de lá</p>
+<p>Vento que assovia no telhado<br>Chamando para a Lua espiar<br>Vento que na beira lá da praia<br>Escutava o meu amor a cantar</p>
+<p>Hoje estou sozinho e tu também<br>Triste, me lembrando do meu bem</p>
+<p>Vento diga, por favor<br>Aonde se escondeu o meu amor<br>Vento diga, por favor<br>Aonde se escondeu o meu amor</p>
+<p>Vento que balança as palhas do coqueiro<br>Vento que encrespa as ondas do mar<br>Vento que assanha os cabelos da morena<br>Me traz notícia de lá</p>
+<p>Vento que assovia no telhado<br>Chamando para a Lua espiar<br>Vento que na beira lá da praia<br>Escutava o meu amor a cantar</p>
+<p>Hoje estou sozinho e tu também<br>Triste mas lembrando do meu bem</p>
+<p class="refrain">Vento diga, por favor…</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="timoneiro">
+<h3 class="song-title">Timoneiro</h3>
+<p class="song-author">PAULINHO DA VIOLA</p>
+<p>Não sou eu quem me navega, quem me navega é o mar<br>Não sou eu quem me navega, quem me navega é o mar<br>É ele quem me carrega, como nem fosse levar<br>É ele quem me carrega, como nem fosse levar</p>
+<p>E quanto mais remo mais rezo, pra nunca mais se acabar<br>Essa viagem que faz o mar em torno do mar<br>Meu velho um dia falou com seu jeito de avisar:<br>“Olha, o mar não tem cabelos que a gente possa agarrar</p>
+<p class="refrain">Não sou eu quem me navega...</p>
+<p>Timoneiro nunca fui, que eu não sou de velejar<br>O leme da minha vida Deus é quem faz governar<br>E quando alguém me pergunta como se faz pra nadar<br>Explico que eu não navego, quem me navega é o mar</p>
+<p class="refrain">Não sou eu quem me navega...</p>
+<p>A rede do meu destino parece a de um pescador<br>Quando retorna vazia, vem carregada de dor<br>Vivo num redemoinho, Deus bem sabe o que ele faz<br>A onda que me carrega ela mesma é quem me traz</p>
+<p class="refrain">Não sou eu quem me navega...</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="virgen-de-guadalupe">
+<h3 class="song-title">Virgen De Guadalupe</h3>
+<p class="song-author">TRADIZIONALE MESSICANO</p>
+<p>La Virgen de Guadalupe, estrella de la mañana,<br>ojos negros, piel morena, mi Virgencita americana.<br>Protectora de los pobres, crisol de todas las razas,<br>transformaste a nuestra tierra en continente de esperanza.</p>
+<p>Juan Diego no se explica cómo pudo pasar<br>la Reina de los cielos lo vino a visitar.<br>Está Ilorando el indio, el rosal floreció<br>Dios le ha dado una madre de su mismo color.</p>
+<p class="refrain">La Virgen de Guadalupe…</p>
+<p>Ya no son enemigos, indio con español,<br>a través de su gracia la virgen los unió,<br>Ya través de los siglos aún perdura esta fé<br>de América que grita que quiere renacer.</p>
+<p class="refrain">La Virgen de Guadalupe…</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+<article class="song" id="virgen-morenita">
+<h3 class="song-title">Virgen Morenita</h3>
+<p class="song-author">JORGE CAFRUNE</p>
+<p>Virgen morenita Virgen milagrosa<br>Virgen morenita te elevo mi cantar<br>Son todos en el valle devotos de tus ruegos<br>Son todos peregrinos señora del lugar<br>Son todos en el valle devotos de tus ruegos<br>Son todos peregrinos señora del lugar</p>
+<p>Virgen morenita india fue tu cuna<br>Porque india tú naciste por la gracia de Dios<br>Así somos esclavos de tu bondad divina<br>Así somos esclavos de tu infinito amor<br>Así somos esclavos de tu bondad divina<br>Así somos esclavos de tu infinito amor</p>
+<p>Así será …Virgen mía …<br>Mereces el respeto y la veneración<br>Por eso yo te canto, te elevo mis plegarias<br>Y pido que escuches mi ruego por favor<br>Por eso yo te canto, te elevo mis plegarias<br>Y pido que escuches mi ruego por favor</p>
+<p>Virgen morenita Santa Inmaculada<br>Virgen morenita te elevo mi cantar<br>Tú gozas del respeto y cariño de tus hijos<br>Así los peregrinos te rezan en tu altar<br>Tú gozas del respeto y cariño de tus hijos<br>Así los peregrinos te rezan en tu altar</p>
+<p class="refrain">Así será …Virgen mía …</p>
+<p class="back-link"><a href="#top">↑ Programm</a></p>
+</article>
+</section>
+
+<footer>
+  <p>Sommerkonzert im Englischen Garten &middot; Heart of Gold<br>
+  Eine Veranstaltung des Kulturzentrum You e.V.</p>
+</footer>
+
+</div>
+
+<div class="font-controls" aria-hidden="false">
+  <button class="small" onclick="zoom(-1)" aria-label="Schrift verkleinern">A−</button>
+  <button class="big" onclick="zoom(1)" aria-label="Schrift vergrößern">A+</button>
+</div>
+
+<script>
+  var sizes = [16, 18, 20, 23, 26];
+  var idx = parseInt(localStorage.getItem('fs-idx') || '1', 10);
+  function apply() {
+    document.body.style.setProperty('--fs', sizes[idx] + 'px');
+    localStorage.setItem('fs-idx', idx);
+  }
+  function zoom(d) {
+    idx = Math.min(sizes.length - 1, Math.max(0, idx + d));
+    apply();
+  }
+  apply();
+</script>
+</body>
+</html>
